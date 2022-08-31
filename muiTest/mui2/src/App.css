@@ -1,0 +1,13 @@
+div{
+  display: flex;
+ flex-wrap: wrap;
+ list-style-type: none;
+ align-items: center;
+ justify-content: center;
+ margin-right: 1vw;
+ margin-top: 2vh;
+
+}
+h1{
+  font-family: helvetica;
+}
