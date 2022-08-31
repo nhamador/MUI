@@ -11,3 +11,17 @@ div{
 h1{
   font-family: helvetica;
 }
+.main
+{
+  
+  margin-left: 1vw;
+  margin-right: 1vw;
+  padding-bottom: 4vh;
+  background-color: #f6dced;
+  border-radius: 25px;
+}
+body
+{
+  
+  background: linear-gradient(to left, #f6dced 0%, #a1919c 100%);
+}
