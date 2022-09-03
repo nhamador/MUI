@@ -26,7 +26,7 @@ class App extends Component {
     return(
       //in final site prolly replace h1 with img
       <div class="main">
-      <h1>AREUADOR</h1>
+      <h1>NATHAN AMADOR</h1>
       <CardList/>
       </div>
 
