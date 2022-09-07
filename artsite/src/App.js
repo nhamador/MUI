@@ -7,6 +7,7 @@ class App extends Component {
   render(){
     return(
       <div class="main">
+        <title>NATHAN AMADOR</title>
         <h1>NATHAN AMADOR</h1>
         <div class ="cardContainer"><CardList/></div>
         <div class = "artistStatement">
