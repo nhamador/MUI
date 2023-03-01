@@ -3,6 +3,7 @@ import {Component} from 'react';
 import './App.css';
 import CardList from './CardList';
 
+
 class App extends Component {
   render(){
     return(
@@ -13,10 +14,11 @@ class App extends Component {
         <div class = "artistStatement">
         <h3>ABOUT</h3>
           <table>
-            <tr>
-              <td>
+          <td>
                <img src = "./photos/headshot.jpg" alt="headshot"></img>
               </td>
+            <tr>
+              
               <td>
                <p>My studio work uses illustration and painting to explore abstraction of figures and symbols.
                 I am primarily concerned with what happens to an icon or symbol once it becomes distorted

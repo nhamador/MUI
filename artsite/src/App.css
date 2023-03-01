@@ -1,74 +1,103 @@
-div{
-  display: flex;
- flex-wrap: wrap;
- list-style-type: none;
- align-items: center;
- justify-content: center;
- margin-right: 1vw;
- margin-top: 2vh;
+:root {
+  --margin-unit: 1rem;
 }
-.cardContainer
-{
+
+body {
+  background-color: #f8f8f8;
+}
+
+div {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
   align-items: center;
   justify-content: center;
-  /* background:blue; */
 }
-div h1{
+
+.card {
+  width: 50%;
+}
+
+h1,
+h3 {
   font-family: QuanSlim-Regular;
-  font-size: 6vh;
+  font-size: 3rem;
   color: rgb(123, 123, 218);
-  align-items: left;
-  justify-content: left;
+  text-align: left;
 }
-.main
-{
-  /*background: red;*/
- 
-  margin-left: 1vw;
-  margin-right: 1vw;
+
+.cardContainer {
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
 }
-body
-{
-  background: #f8f8f8;
+
+.main {
+  margin: 0 var(--margin-unit);
 }
-footer{
-  background: #bdbbbb;
-  width:100%;
+
+footer {
+  background-color: #bdbbbb;
+  width: 100%;
   text-align: center;
   align-content: center;
 }
-.artistStatement
-{
- 
-  width:35%;
-  margin:0;
-  padding-left: 10px;
-  padding-right:10px;
-  padding-top: 15vh;
-  padding-bottom: 15vh;
- text-align: center;
-  
-}
-.artistStatement img
-{
-  height: auto;
-  width:15vw;
 
-  float: left;
+.artistStatement {
+  width: 100%;
+  margin: 0;
+  padding: var(--margin-unit);
+  text-align: center;
 }
-#instagram
-{
+
+.artistStatement img {
+  height: auto;
+  width: 50%;
+  float: center;
+}
+
+#instagram {
   background-image: url(./icons/ig.png);
   display: block;
   margin: 0 auto;
   text-indent: -9999px;
-  width: 50px;
-  height: 50px;
+  width: 3rem;
+  height: 3rem;
 }
-h3{
-  font-family: QuanSlim-Regular;
-  font-size: 6vh;
-  color: rgb(123, 123, 218);
-  align-items: left;
-  justify-content: left;
+
+/* Add alt text for accessibility */
+img {
+  alt: "";
+}
+
+/* Media Queries */
+@media only screen and (min-width: 768px) {
+  h1,
+  h3 {
+    font-size: 4vh;
+  }
+
+  .artistStatement {
+    width: 50%;
+    padding: 5vh 10px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .cardContainer {
+    width: 100%;
+  }
+
+  .card {
+    width: 50%;
+  }
+
+  .modal {
+    width: 50%;
+    height: auto;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+  }
 }
