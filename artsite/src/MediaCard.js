@@ -5,6 +5,7 @@ import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import CardActionArea from '@mui/material/CardActionArea';
 import Box from '@mui/material/Box';
+import { height, textAlign } from '@mui/system';
 
 const style = {
   position: 'absolute',
@@ -17,7 +18,7 @@ const style = {
   bgcolor: 'background.paper',
   border: '2px solid #000',
   boxShadow: 24,
-  p: 4,
+  p: '1vw',
 };
 
 export default function MediaCard({name, id, medium,size}) {
@@ -27,9 +28,8 @@ export default function MediaCard({name, id, medium,size}) {
   return (
 <Card
   sx={{
-    maxHeight: 600,
+    height: '23vw',
     width: '23vw',
-    maxWidth: 345,
     margin: "1vh",
     backgroundColor: 'gray',
     '&:hover': {
@@ -42,7 +42,8 @@ export default function MediaCard({name, id, medium,size}) {
     <CardActionArea onClick={handleOpen} >
     <CardMedia
       component="img"
-      height= "400"
+      height= "full"
+      width = "full"
       image= {`./art/${id}.jpg`}
       alt={ `${name}`}
     />
@@ -54,19 +55,30 @@ export default function MediaCard({name, id, medium,size}) {
       aria-describedby="modal-modal-description"
     >
       <Box sx={style}>
-        <Typography id="modal-modal-title" variant="h6" component="h2">
-          {name}
-        </Typography>
         <CardMedia
           component="img"
           //in final version of site I want the img here to be higher quality and larger
           image= {`./art/${id}.jpg`}
           alt= { `${name}`}
         />
-        <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-        {medium} <br />
-        {size}
+        <Typography id="modal-modal-description" sx=
+        {{
+            mt: 2,
+            align: 'left',
+            fontSize: 
+            {
+              xs: '.8rem',
+              sm: '1rem',
+              md: '1rem',
+              lg: '1rem',
+              xl: '1rem',
+          },
+          }}>
+            {name} <br />
+            {medium} <br />
+            {size}
         </Typography>
+        
       </Box>
     </Modal>
 

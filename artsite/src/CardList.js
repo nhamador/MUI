@@ -1,12 +1,9 @@
 import * as React from 'react';
 import MediaCard from './MediaCard';
 
-
-
 export default function CardList() {
   return (
     <div>
-
       <MediaCard
         id= "100"
         name= "A Strange Encounter"
