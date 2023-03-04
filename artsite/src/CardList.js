@@ -4,6 +4,57 @@ import MediaCard from './MediaCard';
 export default function CardList() {
   return (
     <div>
+       <MediaCard
+        id= "138"
+        name= "Untitled"
+        medium= "Digital Art"
+        />
+       <MediaCard
+        id= "137"
+        name= "Untitled"
+        medium= "Digital Art"
+        />
+        <MediaCard
+        id= "136"
+        name= "Untitled"
+        medium= "Digital Art"
+        />
+       <MediaCard
+        id= "135"
+        name= "Untitled"
+        medium= "Digital Art"
+        />
+       <MediaCard
+        id= "134"
+        name= "Untitled"
+        medium= "Digital Art"
+        />
+       <MediaCard
+        id= "133"
+        name= "Untitled"
+        medium= "Digital Art"
+        />
+
+      <MediaCard
+        id= "130"
+        name= "Untitled"
+        medium= "Digital Art"
+        />
+        <MediaCard
+        id= "131"
+        name= "Untitled"
+        medium= "Digital Art"
+        />
+       <MediaCard
+        id= "132"
+        name= "Untitled"
+        medium= "Digital Art"
+        />
+
+
+
+
+
       <MediaCard
         id= "100"
         name= "A Strange Encounter"
