@@ -44,8 +44,12 @@ export default function MediaCard({name, id, medium,size}) {
       component="img"
       height= "full"
       width = "full"
-      image= {`./art/${id}.jpg`}
+      image= {`./art/compressed/${id}.jpg`}
       alt={ `${name}`}
+      onError={(e) => {
+        e.target.onerror = null;
+        e.target.src = `./art/compressed/${id}.JPG`;
+      }}
     />
     </CardActionArea>
     <Modal
@@ -60,6 +64,10 @@ export default function MediaCard({name, id, medium,size}) {
           //in final version of site I want the img here to be higher quality and larger
           image= {`./art/${id}.jpg`}
           alt= { `${name}`}
+          onError={(e) => {
+            e.target.onerror = null;
+            e.target.src = `./art/${id}.JPG`;
+          }}
         />
         <Typography id="modal-modal-description" sx=
         {{
