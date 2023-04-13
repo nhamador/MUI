@@ -85,7 +85,6 @@ export default function MediaCard({name, id, medium,size,primarycolor}) {
             {name} <br />
             {medium} <br />
             {size}
-            {id}
         </Typography>
         
       </Box>

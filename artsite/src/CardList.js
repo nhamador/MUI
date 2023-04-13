@@ -47,78 +47,78 @@ export default function CardList() {
     },
     {
       id: "139",
-      name: "",
+      name: "Study for an Abstracted Form",
       medium: "Pen and Ink",
       primarycolor: "White",
       
     },
     {
       id: "140",
-      name: "",
+      name: "Study for a Bull",
       medium: "Acrylic on Canvas",
-      size: ""
+      size: "30'' x 40''"
     },
     {
       id: "141",
-      name: "",
+      name: "Many Many Cats",
       medium: "Acrylic on Canvas",
-      size: ""
+      size: "8'' x 8''"
     },
     {
       id: "142",
-      name: "",
+      name: "Untitled",
       medium: "Pen and Ink",
       primarycolor: "White",
   
     },
     {
       id: "143",
-      name: "",
+      name: "Untitled",
       medium: "Digital Art",
       
     },
     {
       id: "144",
-      name: "",
+      name: "Untitled",
       medium: "Digital Art",
    
     },
     {
       id: "145",
-      name: "",
+      name: "In the Garden",
       medium: "Digital Art",
    
     },
     {
       id: "146",
-      name: "",
+      name: "Study for an Abstracted Form",
       medium: "Pen and Ink",
       primarycolor: "White",
      
     },
     {
       id: "147",
-      name: "",
+      name: "Untitled",
       medium: "Pen and Ink",
       primarycolor: "White",
       
     },
     {
       id: "148",
-      name: "",
+      name: "Study for Obfuscation",
       medium: "Acrylic on Wood",
       size: "",
     },
     {
       id: "149",
-      name: "",
+      name: "Dreams of an Old Man",
       medium: "Pen and Ink",
       primarycolor: "White",
       
     },
     {
       id: "150",
-      name: "",
+      name: "The Lucky Bull",
       medium: "Pen and Ink",
       primarycolor: "White",
      
