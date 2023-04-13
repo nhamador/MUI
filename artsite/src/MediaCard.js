@@ -21,7 +21,7 @@ const style = {
   p: '1vw',
 };
 
-export default function MediaCard({name, id, medium,size}) {
+export default function MediaCard({name, id, medium,size,primarycolor}) {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -62,11 +62,11 @@ export default function MediaCard({name, id, medium,size}) {
         <CardMedia
           component="img"
           //in final version of site I want the img here to be higher quality and larger
-          image= {`./art/${id}.jpg`}
+          image= {`./art/compressed/${id}.jpg`}
           alt= { `${name}`}
           onError={(e) => {
             e.target.onerror = null;
-            e.target.src = `./art/${id}.JPG`;
+            e.target.src = `./art/compressed/${id}.JPG`;
           }}
         />
         <Typography id="modal-modal-description" sx=
@@ -85,6 +85,7 @@ export default function MediaCard({name, id, medium,size}) {
             {name} <br />
             {medium} <br />
             {size}
+            {id}
         </Typography>
         
       </Box>

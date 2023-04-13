@@ -2,221 +2,155 @@ import * as React from 'react';
 import MediaCard from './MediaCard';
 
 export default function CardList() {
+  const cards = [
+    {
+      id: "101",
+      name: "Untitled",
+      medium: "Digital Art",
+      primarycolor: "White",
+    },
+    {
+      id: "103",
+      name: "Untitled",
+      medium: "Digital Art",
+      primarycolor: "White",
+    },
+    {
+      id: "104",
+      name: "Untitled",
+      medium: "Digital Art",
+      primarycolor: "White",
+    },
+    {
+      id: "119",
+      name: "Untitled",
+      medium: "Acrylic on Wood",
+      size: "8''x10''"
+    },
+    {
+      id: "122",
+      name: "Portrait of a Forgotten Man",
+      medium: "Acrylic on Wood",
+      size: "8''x10''"
+    },
+    {
+      id: "123",
+      name: "The Dancer",
+      medium: "Acrylic on Wood",
+      size: "8''x10''"
+    },
+    {
+      id: "129",
+      name: "Untitled",
+      medium: "Acrylic on Wood",
+      size: "8''x10''"
+    },
+    {
+      id: "139",
+      name: "",
+      medium: "Pen and Ink",
+      primarycolor: "White",
+      
+    },
+    {
+      id: "140",
+      name: "",
+      medium: "Acrylic on Canvas",
+      size: ""
+    },
+    {
+      id: "141",
+      name: "",
+      medium: "Acrylic on Canvas",
+      size: ""
+    },
+    {
+      id: "142",
+      name: "",
+      medium: "Pen and Ink",
+      primarycolor: "White",
+  
+    },
+    {
+      id: "143",
+      name: "",
+      medium: "Digital Art",
+      
+    },
+    {
+      id: "144",
+      name: "",
+      medium: "Digital Art",
+   
+    },
+    {
+      id: "145",
+      name: "",
+      medium: "Digital Art",
+   
+    },
+    {
+      id: "146",
+      name: "",
+      medium: "Pen and Ink",
+      primarycolor: "White",
+     
+    },
+    {
+      id: "147",
+      name: "",
+      medium: "Pen and Ink",
+      primarycolor: "White",
+      
+    },
+    {
+      id: "148",
+      name: "",
+      medium: "Acrylic on Wood",
+      size: "",
+    },
+    {
+      id: "149",
+      name: "",
+      medium: "Pen and Ink",
+      primarycolor: "White",
+      
+    },
+    {
+      id: "150",
+      name: "",
+      medium: "Pen and Ink",
+      primarycolor: "White",
+     
+    }
+  ];
+
+  // Sort the cards array by medium
+  //cards.sort((a, b) => (a.medium > b.medium) ? 1 : -1);
+
+  // Sort the cards array by primarycolor
+cards.sort((a, b) => {
+    if (a.primarycolor === "White") {
+      return 1;
+    } else if (b.primarycolor === "White") {
+      return -1;
+    } else if (a.primarycolor > b.primarycolor) {
+      return 1;
+    } else {
+      return -1;
+    }
+  });
   return (
     <div>
-       <MediaCard
-        id= "138"
-        name= "Untitled"
-        medium= "Digital Art"
-        />
-       <MediaCard
-        id= "137"
-        name= "Untitled"
-        medium= "Digital Art"
-        />
+      {cards.map((card) => (
         <MediaCard
-        id= "136"
-        name= "Untitled"
-        medium= "Digital Art"
+          key={card.id}
+          id={card.id}
+          name={card.name}
+          medium={card.medium}
+          size={card.size}
         />
-       <MediaCard
-        id= "135"
-        name= "Untitled"
-        medium= "Digital Art"
-        />
-       <MediaCard
-        id= "134"
-        name= "Untitled"
-        medium= "Digital Art"
-        />
-       <MediaCard
-        id= "133"
-        name= "Untitled"
-        medium= "Digital Art"
-        />
-
-      <MediaCard
-        id= "130"
-        name= "Untitled"
-        medium= "Digital Art"
-        />
-        <MediaCard
-        id= "131"
-        name= "Untitled"
-        medium= "Digital Art"
-        />
-       <MediaCard
-        id= "132"
-        name= "Untitled"
-        medium= "Digital Art"
-        />
-
-
-
-
-
-      <MediaCard
-        id= "100"
-        name= "A Strange Encounter"
-        medium= "Digital Art"
-        />
-      <MediaCard
-          id= "101"
-          name= "Untitled"
-          medium= "Digital Art"
-        />
-      <MediaCard
-        id= "102"
-        name= "Untitled"
-        medium="Digital Art"
-        />
-      <MediaCard
-        id= "103"
-        name= "Untitled"
-        medium= "Digital Art"
-        />
-      <MediaCard
-          id= "104"
-          name= "Untitled"
-          medium="Digital Art"
-      />
-      <MediaCard
-        id= "105"
-        name= "Untitled"
-        medium= "Digital Art"
-      />
-      <MediaCard
-        id= "106"
-        name= "Untitled"
-        medium= "Digital Art"
-      />
-      <MediaCard
-        id= "107"
-        name= "Untitled"
-        medium= "Digital Art"
-
-      />
-      <MediaCard
-        id= "108"
-        name= "Untitled"
-        medium= "Digital Art"
-      />
-      <MediaCard
-        id= "109"
-        name= "Reflections of the Self (who am I without everyone?"
-        medium= "Digital Art"
-      />
-      <MediaCard
-        id= "110"
-        name= "A Warm Embrace"
-        medium= "Digital Art"
-      />
-      <MediaCard
-        id= "111"
-        name= "A Warm Embrace"
-        medium= "Digital Art"
-      />
-      <MediaCard
-        id= "112"
-        name= "A Warm Embrace"
-        medium= "Digital Art"
-      />
-      <MediaCard
-        id= "113"
-        name= "A Warm Embrace"
-        medium= "Digital Art"
-      />
-      <MediaCard
-        id= "114"
-        name= "A Warm Embrace"
-        medium= "Digital Art"
-      />
-      <MediaCard
-        id= "115"
-        name= "The Toll of Daily Life"
-        medium= "Digital Art"
-      />
-      <MediaCard
-        id= "116"
-        name= "The Toll of Daily Life"
-        medium= "Digital Art"
-      />
-      <MediaCard
-        id= "117"
-        name= "The Toll of Daily Life"
-        medium= "Digital Art"
-      />
-      <MediaCard
-        id= "118"
-        name= "The Toll of Daily Life"
-        medium= "Digital Art"
-      />
-      <MediaCard
-        id= "119"
-        name= "Untitled"
-        medium= "Acrylic on Wood"
-        size= "8''x10''"
-        />
-      <MediaCard
-          id= "120"
-          name= "The Remains of a Man Who Loved Cats"
-          medium= "Acrylic on Wood"
-          size= "8''x10''"
-        />
-      <MediaCard
-        id= "121"
-        name= "Study for an Apple Tree"
-        medium= "Acrylic on Wood"
-          size= "8''x10''"
-        />
-      <MediaCard
-        id= "122"
-        name= "Portrait of a Forgotten Man"
-        medium= "Acrylic on Wood"
-          size= "8''x10''"
-        />
-      <MediaCard
-          id= "123"
-          name= "The Dancer"
-          medium= "Acrylic on Wood"
-          size= "8''x10''"
-      />
-      <MediaCard
-        id= "124"
-        name= "Portrait of a Man"
-        medium= "Acrylic on Wood"
-          size= "8''x10''"
-      />
-      <MediaCard
-        id= "125"
-        name= "The End of a Family"
-        medium= "Acrylic on Wood"
-          size= "8''x10''"
-      />
-      <MediaCard
-        id= "126"
-        name= "The Animal"
-        medium= "Acrylic on Wood"
-          size= "8''x10''"
-      />
-      <MediaCard
-        id= "127"
-        name= "Study for Obfuscation"
-        medium= "Acrylic on Wood"
-          size= "8''x10''"
-      />
-      <MediaCard
-        id= "128"
-        name= "Study for Obfuscation"
-        medium= "Acrylic on Wood"
-          size= "8''x10''"
-      />
-      <MediaCard
-        id= "129"
-        name= "Untitled"
-        medium= "Acrylic on Wood"
-          size= "8''x10''"
-      />
+      ))}
     </div>
   );
 }
